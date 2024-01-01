@@ -24,7 +24,7 @@ else:
     import soundfile as sf
     import sounddevice # or pygame.mixer, py-simple-audio
     sounddevice.default.samplerate = 44100
-    def playsound(s, wait=True):
+    def playsound(s, wait=True): 
         sounddevice.play(s) # samplerate=16000
         if wait:
             sounddevice.wait()
